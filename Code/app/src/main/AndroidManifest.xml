@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.project.seoul_project">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+            android:name=".GlobalApplication"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="여기서 내려요"
+            android:roundIcon="@mipmap/ic_launcher"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:usesCleartextTraffic="true">
+        <activity android:name=".InformAppActivity">
+        </activity>
+        <activity android:name=".HowToActivity">
+        </activity>
+        <activity android:name=".ChatActivity">
+        </activity>
+        <activity android:name=".ReportActivity">
+        </activity>
+        <activity android:name=".Receive_Activity">
+        </activity>
+        <activity
+                android:name=".ShareActivity"
+                android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+                android:name=".SelectTrain"
+                android:theme="@android:style/Theme.Dialog"
+                android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity android:name=".Login_Acitivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
+
+        <receiver
+                android:name=".BroadcastD"
+                android:enabled="true"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="com.project.seoul_project.action.STOP">
+                </action>
+                <action android:name="com.project.seoul_project.action.LATER">
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <service
+                android:name=".Remove_Service"
+                android:stopWithTask="false">
+        </service>
+
+        <meta-data
+                android:name="com.kakao.sdk.AppKey"
+                android:value="@string/kakao_app_key"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/app"
+                android:icon="@drawable/inform"
+                android:background="#00000000" android:backgroundTint="#00000000"
+                android:title="앱 정보"
+        />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/log_out"
+                android:icon="@drawable/baseline_exit_to_app_black_24dp"
+                android:background="#00000000" android:backgroundTint="#00000000"
+                android:title="로그아웃"
+        />
+
+    </group>rlata302
+</menu>
+
+

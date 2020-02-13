@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".InformAppActivity">
+    <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:text="app 정보" android:background="@drawable/button_corner" android:gravity="center" android:textColor="#000000" android:textStyle="bold"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"  android:background="@drawable/textview_corner" android:layout_weight="1">
+    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="app 버전" android:gravity="center" android:textColor="#000000" android:textStyle="bold"/>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:id="@+id/inform_text1" android:layout_weight="1" android:gravity="center" android:textColor="#000000"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:background="@drawable/textview_corner2" android:layout_weight="1">
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="이미지 출처" android:gravity="center" android:textColor="#000000" android:textStyle="bold"/>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:id="@+id/inform_text2" android:gravity="center" android:textColor="#000000"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:background="@drawable/textview_corner3" android:layout_weight="1">
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="개발자" android:gravity="center" android:textColor="#000000" android:textStyle="bold"/>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:id="@+id/inform_text3" android:gravity="center" android:textColor="#000000"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:background="@drawable/textview_corner4" android:layout_weight="1">
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="개발자 이메일" android:gravity="center" android:textColor="#000000" android:textStyle="bold"/>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:id="@+id/inform_text4" android:gravity="center" android:textColor="#000000"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:background="@drawable/textview_corner5" android:layout_weight="1">
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="개발자 핸드폰 번호" android:gravity="center" android:textColor="#000000" android:textStyle="bold"/>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:id="@+id/inform_text5"  android:gravity="center" android:textColor="#000000"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:background="@drawable/textview_corner6" android:layout_weight="1">
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="부탁 사항" android:gravity="center" android:textColor="#000000" android:textStyle="bold"/>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:id="@+id/qnxkr_text"  android:gravity="center" android:textColor="#000000"/>
+
+    </LinearLayout>
+
+
+    <Button android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:text="확인" android:gravity="center" android:id="@+id/inform_app_button"/>
+
+
+</LinearLayout>

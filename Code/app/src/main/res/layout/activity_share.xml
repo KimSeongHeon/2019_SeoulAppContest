@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ShareActivity"
+        android:background="#eeeeee"
+        android:orientation="vertical">
+    <TextView android:layout_width="match_parent"
+              android:layout_height="20dp"
+              android:text="세부 정보 입력"
+              android:gravity="center"
+              android:textStyle="bold"
+              android:background="#B7DBF3"
+              android:textColor="#000000"
+    />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:background="@drawable/button_corner">
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="#B9000000"
+                      android:background="@drawable/textview_corner2"
+                      android:gravity="center"
+                      android:text="이용 중인 열차 정보"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/info_linear"
+                    android:orientation="horizontal">
+                <ImageView
+                        android:id="@+id/listicon"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_corner"
+                        android:scaleType="fitXY"
+                        android:layout_margin="2dp"
+                        android:padding="2dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:background="@drawable/button_corner">
+                        <TextView
+                                android:text="열차 번호"
+                                android:background="@drawable/textview_corner2"
+                                android:textColor="#B9000000"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:id="@+id/trainno_text"
+                                android:layout_width="0dp"
+                                android:textColor="#A8000000"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.5"
+                                android:gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:background="@drawable/button_corner">
+                        <TextView
+                                android:text="열차 방향"
+                                android:textColor="#B9000000"
+                                android:background="@drawable/textview_corner2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:id="@+id/train_direction_text"
+                                android:layout_width="0dp"
+                                android:textColor="#A8000000"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.5"
+                                android:gravity="center"/>
+
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:background="@drawable/button_corner">
+                        <TextView
+                                android:text="열차 행"
+                                android:textColor="#B9000000"
+                                android:background="@drawable/textview_corner2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:id="@+id/train_dest_text"
+                                android:textColor="#A8000000"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.5"
+                                android:gravity="center"/>
+
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal" android:background="@drawable/button_corner">
+                        <TextView
+                                android:text="급행 여부"
+                                android:background="@drawable/textview_corner2"
+                                android:layout_width="0dp"
+                                android:textColor="#B9000000"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:id="@+id/directat_textview"
+                                android:layout_width="0dp"
+                                android:textColor="#A8000000"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.5"
+                                android:gravity="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:orientation="horizontal">
+        <ImageView android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:src="@drawable/placeholder"
+                     android:padding="5dp"
+                     android:scaleType="fitCenter"
+                     android:layout_weight="1"/>
+        <FrameLayout android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_margin="4dp"
+                     android:gravity="center|left"
+                     android:layout_weight="10">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="horizontal"
+                          android:visibility="invisible"
+                          android:id="@+id/inner_linear">
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="5"
+                      android:layout_height="match_parent"
+                      android:textColor="#000000"
+                      android:textSize="12dp"
+                      android:textStyle="bold|italic"
+                      android:gravity="center"
+                      android:id="@+id/dest_textview"/>
+            <Button android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/rewrite_button"
+                    android:text="수정"/>
+            </LinearLayout>
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:visibility="visible"
+                  android:textSize="10dp"
+                  android:id="@+id/search_edittext"
+                  android:hint="도착역을 입력해주세요."/>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/dynamic"
+            android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rcyview"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                  android:layout_weight="1.3"
+                  android:background="@drawable/button_corner"
+                  android:id="@+id/share_liner_layout1"
+                  android:orientation="horizontal">
+        <ImageView android:layout_width="30dp"
+                   android:src="@drawable/smartphone"
+                   android:padding="3dp"
+                   android:layout_marginLeft="5dp"
+                   android:scaleType="fitCenter"
+                   android:layout_gravity="left|center"
+                   android:layout_height="30dp"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:textStyle="italic|bold"
+                  android:id="@+id/share_info_textview"
+                  android:gravity="center"/>
+    </LinearLayout>
+    <RadioGroup android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/share_radio_group"
+                android:orientation="horizontal" android:layout_gravity="center"
+                android:checkedButton="@id/share_radiobutton1">
+        <RadioButton android:layout_width="0dp"
+                     android:text="블루투스 공유"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/share_radiobutton1"
+                     android:layout_weight="1"/>
+        <RadioButton android:layout_width="0dp"
+                     android:text="직접 입력 공유"
+                     android:id="@+id/share_radiobutton2"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"/>
+
+
+    </RadioGroup>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:background="@drawable/textview_corner6"
+                  android:gravity="center"
+                  android:orientation="horizontal"
+                  android:id="@+id/share_liner_layout2"
+                  android:layout_weight="1">
+        <FrameLayout android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="8">
+        <Spinner android:layout_width="130dp"
+                 android:visibility="invisible"
+                 android:layout_gravity="left|center"
+                 android:layout_height="50dp"
+                 android:id="@+id/share_spinner"
+                 android:layout_weight="4"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_weight="8"
+                      android:textStyle="bold"
+                      android:gravity="center"
+                      android:text="자리 정보"
+                      android:textColor="#000000"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="5" android:id="@+id/share_scroll_framview">
+    <ScrollView android:layout_width="match_parent"
+                android:background="@drawable/textview_corner6"
+                android:id="@+id/share_scrollview"
+                 android:layout_height="match_parent" android:layout_weight="8"
+    android:scrollbars="vertical">
+
+        <HorizontalScrollView android:layout_width="match_parent"
+                              android:layout_gravity="center"
+                              android:id="@+id/layoutSeat"
+                              android:layout_height="match_parent"></HorizontalScrollView>
+    </ScrollView>
+        <ImageButton android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:src="@drawable/refresh"
+                     android:scaleType="fitCenter"
+                     android:id="@+id/share_change_imagebutton"
+                     android:layout_gravity="right|top"/>
+    </FrameLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center|bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:text="확인"
+                android:textSize="15sp"
+                android:padding="16dp"
+                android:gravity="center"
+                android:background="#00000000"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="53dp"
+                android:id="@+id/confirm_button"/>
+        <Button
+                android:text="닫기"
+                android:textSize="15sp"
+                android:padding="16dp"
+                android:gravity="center"
+                android:background="#00000000"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="53dp"
+                android:id="@+id/cancel_button"/>
+    </LinearLayout>
+
+
+</LinearLayout>

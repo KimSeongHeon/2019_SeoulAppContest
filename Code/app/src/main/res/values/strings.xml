@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SEOUL_Project</string>
+    <string name="kakao_app_key">1df79af9b5fe637dd2f38e93ba10d964</string>
+    <string-array name="room">
+        <item>1호실</item>
+        <item>2호실</item>
+        <item>3호실</item>
+        <item>4호실</item>
+        <item>5호실</item>
+        <item>6호실</item>
+        <item>7호실</item>
+        <item>8호실</item>
+        <item>9호실</item>
+    </string-array>
+</resources>
